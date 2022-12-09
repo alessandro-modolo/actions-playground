@@ -1,6 +1,8 @@
 # Changelog
 
-## 0.0 Unreleased  
+## 0.0 Unreleased   
+
+## [0.0.7] - 2022-12-09
 
 ### Changed
 - Do some change
@@ -31,3 +33,4 @@
 - Define GitHub `prepare-release` action
 
 _:seedling: Initial release._
+\n[0.0.7]: https://github.com/alessandro-modolo/releases/tag/0.0.7
