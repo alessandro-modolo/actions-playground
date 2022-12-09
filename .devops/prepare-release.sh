@@ -12,12 +12,12 @@ CURRENT_DATE=$(date +"%Y-%m-%d")
 
 # add a new patch version section inside CHANGELOG.md
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  sed -i '' -e "s/.*## ${TOKENS[0]}.${TOKENS[1]} Unreleased.*/& \n\n## [${RELEASE_VERSION}] - ${CURRENT_DATE}/" CHANGELOG.md
+  sed -i '' -e "s/.*## ${TOKENS[0]}.${TOKENS[1]} Unreleased.*/## [${RELEASE_VERSION}] - ${CURRENT_DATE}/" CHANGELOG.md
 else
-  sed -i -e "s/.*## ${TOKENS[0]}.${TOKENS[1]} Unreleased.*/& \n\n## [${RELEASE_VERSION}] - ${CURRENT_DATE}/" CHANGELOG.md
+  sed -i -e "s/.*## ${TOKENS[0]}.${TOKENS[1]} Unreleased.*/## [${RELEASE_VERSION}] - ${CURRENT_DATE}/" CHANGELOG.md
 fi
 
-printf "\n[%s]: https://github.com/alessandro-modolo/releases/tag/v%s" ${RELEASE_VERSION} ${RELEASE_VERSION} >> CHANGELOG.md
+printf "[%s]: https://github.com/alessandro-modolo/releases/tag/v%s\n" ${RELEASE_VERSION} ${RELEASE_VERSION} >> CHANGELOG.md
 
 # commit new version
 git commit -am "version v${RELEASE_VERSION}" --
@@ -31,5 +31,17 @@ mvn build-helper:parse-version versions:set \
   -DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.nextIncrementalVersion}-SNAPSHOT \
   versions:commit
 
+RELEASE_VERSION=${{ env.release_name }}
+TOKENS=(${RELEASE_VERSION//./ })
+
+# add a new SNAPSHOT version section inside CHANGELOG.md
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  sed -i '' -e "s/# Changelog.*/& \n\n## ${TOKENS[0]}.${TOKENS[1]} Unreleased/" CHANGELOG.md
+else
+  sed -i -e "s/# Changelog.*/& \n\n## ${TOKENS[0]}.${TOKENS[1]} Unreleased/" CHANGELOG.md
+fi
+
 # commit and push new development version
 git commit -am "prepare next development version" --
+
+echo "Release ${RELEASE_VERSION} has been prepared. Review git log before push commits and tag"

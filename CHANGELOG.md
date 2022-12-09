@@ -1,6 +1,11 @@
 # Changelog 
 
 ## 0.0 Unreleased
+### Removed
+- Delete `make-release` workflow
+
+### Changed
+- Fix `prepare-release.sh` script
 
 ## [0.0.8] - 2022-12-09
 ### Changed
