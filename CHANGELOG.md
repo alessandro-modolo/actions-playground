@@ -1,6 +1,6 @@
 # Changelog 
 
-## 0.0 Unreleased
+## [0.0.9] - 2022-12-10
 ### Removed
 - Delete `make-release` workflow
 
@@ -44,3 +44,4 @@ _:seedling: Initial release._
 [0.0.4]: https://github.com/alessandro-modolo/releases/tag/v0.0.5
 [0.0.7]: https://github.com/alessandro-modolo/releases/tag/v0.0.7
 [0.0.8]: https://github.com/alessandro-modolo/releases/tag/v0.0.8
+[0.0.9]: https://github.com/alessandro-modolo/releases/tag/v0.0.9
