@@ -12,10 +12,12 @@ CURRENT_DATE=$(date +"%Y-%m-%d")
 
 # add a new patch version section inside CHANGELOG.md
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  sed -i '' -e "s/.*## ${TOKENS[0]}.${TOKENS[1]} Unreleased.*/& \n\n## [${RELEASE_VERSION}] - ${CURRENT_DATE}\n[${RELEASE_VERSION}]: https:\/\/github.com\/alessandro-modolo\/releases\/tag\/${RELEASE_VERSION}/" CHANGELOG.md
+  sed -i '' -e "s/.*## ${TOKENS[0]}.${TOKENS[1]} Unreleased.*/& \n\n## [${RELEASE_VERSION}] - ${CURRENT_DATE}/" CHANGELOG.md
 else
-  sed -i -e "s/.*## ${TOKENS[0]}.${TOKENS[1]} Unreleased.*/& \n\n## [${RELEASE_VERSION}] - ${CURRENT_DATE}\n[${RELEASE_VERSION}]: https:\/\/github.com\/alessandro-modolo\/releases\/tag\/${RELEASE_VERSION}/" CHANGELOG.md
+  sed -i -e "s/.*## ${TOKENS[0]}.${TOKENS[1]} Unreleased.*/& \n\n## [${RELEASE_VERSION}] - ${CURRENT_DATE}/" CHANGELOG.md
 fi
+
+echo "\n[${RELEASE_VERSION}]: https://github.com/alessandro-modolo/releases/tag/${RELEASE_VERSION}" >> CHANGELOG.md
 
 # commit new version
 git commit -am "version v${RELEASE_VERSION}" --
