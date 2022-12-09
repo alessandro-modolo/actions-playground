@@ -1,6 +1,6 @@
 # Changelog  
 
-## 0.0 Unreleased
+## [0.0.10] - 2022-12-10
 ### Changed
 - Grant `write` permission to `publish-release` workflow
 - Update `publish-release` workflow's name
@@ -50,3 +50,4 @@ _:seedling: Initial release._
 [0.0.7]: https://github.com/alessandro-modolo/releases/tag/v0.0.7
 [0.0.8]: https://github.com/alessandro-modolo/releases/tag/v0.0.8
 [0.0.9]: https://github.com/alessandro-modolo/releases/tag/v0.0.9
+[0.0.10]: https://github.com/alessandro-modolo/releases/tag/v0.0.10
