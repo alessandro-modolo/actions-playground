@@ -1,8 +1,8 @@
 #!/bin/bash
-cd ..
 
 # prepare next release version
 mvn build-helper:parse-version versions:set \
+  -s $GITHUB_WORKSPACE/settings.xml \
   -DskipTests \
   -DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.incrementalVersion} \
   versions:commit
@@ -15,18 +15,20 @@ CURRENT_DATE=$(date +"%Y-%m-%d")
 sed -i '' "s/.*## ${TOKENS[0]}.${TOKENS[1]} Unreleased.*/& \n\n## ${RELEASE_VERSION} - ${CURRENT_DATE}/" CHANGELOG.md
 
 # commit new version
-git add -A -- .
-git commit -m "version v${RELEASE_VERSION}" --
+git commit -am "version v${RELEASE_VERSION}" --
 
 # create a tag for the release
 git tag -a "v${RELEASE_VERSION}" -m "" --
 
 # prepare next development version
 mvn build-helper:parse-version versions:set \
+  -s $GITHUB_WORKSPACE/settings.xml \
   -DskipTests \
   -DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.nextIncrementalVersion}-SNAPSHOT \
   versions:commit
 
 # commit and push new development version
-git add -A -- .
-git commit -m "prepare next development version" --
+git commit -am "prepare next development version" --
+
+# push all changes
+git push --tags

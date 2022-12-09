@@ -1,0 +1,38 @@
+name: Prepare release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create-release:
+    name: Create release
+    runs-on: ubuntu-latest
+    permissions: write-all
+
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v3
+
+      - name: Cache local Maven repository
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+          settings-path: ${{ github.workspace }} # location for the settings.xml file
+
+      - name: Configure Git User
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+
+      - name: Publish to GitHub Packages Apache Maven
+        run: sh ./prepare-release.sh
