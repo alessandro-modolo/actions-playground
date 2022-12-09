@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0 Unreleased
+## [0.0.8] - 2022-12-09
 ### Changed
 - Review release workflow
 
@@ -36,3 +36,4 @@ _:seedling: Initial release._
 [0.0.4]: https://github.com/alessandro-modolo/releases/tag/v0.0.4
 [0.0.4]: https://github.com/alessandro-modolo/releases/tag/v0.0.5
 [0.0.7]: https://github.com/alessandro-modolo/releases/tag/v0.0.7
+[0.0.8]: https://github.com/alessandro-modolo/releases/tag/v0.0.8
