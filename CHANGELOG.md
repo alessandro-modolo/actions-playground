@@ -1,6 +1,8 @@
 # Changelog  
 
 ## 0.0 Unreleased
+### Changed
+- Grant `write` permission to `publish-release` workflow
 
 ## [0.0.9] - 2022-12-10
 ### Removed
