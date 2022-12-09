@@ -1,6 +1,9 @@
 # Changelog
 
-## 0.0 Unreleased
+## 0.0 Unreleased 
+
+## [0.0.5] - 2022-12-09
+[0.0.5]: https://github.com/alessandro-modolo/releases/tag/0.0.5
 ### Changed
 - Do some change
 
