@@ -1,6 +1,8 @@
 # Changelog
 
-## 0.0 Unreleased
+## 0.0 Unreleased 
+
+## 0.0.1 - 2022-12-09
 
 ### Added
 - Setup CI/CD release script
