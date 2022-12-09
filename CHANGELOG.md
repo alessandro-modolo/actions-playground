@@ -1,6 +1,8 @@
 # Changelog   
 
 ## 0.0 Unreleased
+## Added
+- Add `README.md`
 
 ## [0.0.10] - 2022-12-10
 ### Changed
