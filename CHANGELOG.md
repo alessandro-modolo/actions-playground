@@ -1,6 +1,8 @@
 # Changelog
 
-## 0.0 Unreleased   
+## 0.0 Unreleased
+### Changed
+- Review release workflow
 
 ## [0.0.7] - 2022-12-09
 
@@ -8,15 +10,12 @@
 - Do some change
 
 ## [0.0.6] - 2022-12-09
-  [0.0.6]: https://github.com/alessandro-modolo/releases/tag/0.0.6
 
 ## [0.0.5] - 2022-12-09
-[0.0.5]: https://github.com/alessandro-modolo/releases/tag/0.0.5
 ### Changed
 - Do some change
 
 ## [0.0.4] - 2022-12-09
-[0.0.4]: https://github.com/alessandro-modolo/releases/tag/0.0.4
 
 ## 0.0.3 - 2022-12-09
 ### Changed
@@ -33,4 +32,7 @@
 - Define GitHub `prepare-release` action
 
 _:seedling: Initial release._
-\n[0.0.7]: https://github.com/alessandro-modolo/releases/tag/0.0.7
+
+[0.0.4]: https://github.com/alessandro-modolo/releases/tag/v0.0.4
+[0.0.4]: https://github.com/alessandro-modolo/releases/tag/v0.0.5
+[0.0.7]: https://github.com/alessandro-modolo/releases/tag/v0.0.7

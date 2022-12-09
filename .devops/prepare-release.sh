@@ -17,7 +17,7 @@ else
   sed -i -e "s/.*## ${TOKENS[0]}.${TOKENS[1]} Unreleased.*/& \n\n## [${RELEASE_VERSION}] - ${CURRENT_DATE}/" CHANGELOG.md
 fi
 
-echo "\n[${RELEASE_VERSION}]: https://github.com/alessandro-modolo/releases/tag/${RELEASE_VERSION}" >> CHANGELOG.md
+printf "\n[%s]: https://github.com/alessandro-modolo/releases/tag/v%s" ${RELEASE_VERSION} ${RELEASE_VERSION} >> CHANGELOG.md
 
 # commit new version
 git commit -am "version v${RELEASE_VERSION}" --
