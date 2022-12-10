@@ -1,9 +1,14 @@
 # Changelog    
 
 ## 0.1 Unreleased
+### Added
+- `next-major` and `next-minor` scripts
+- Create `core` module
+### Changed
+- Convert `pom.xml` into pom packaged
 
 ## 0.0 Unreleased
-## Added
+### Added
 - Add `README.md`
 
 ## [0.0.10] - 2022-12-10
