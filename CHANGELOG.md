@@ -5,7 +5,7 @@
 ## [0.1.1] - 2022-12-10
 ### Fixed
 - java and source version inside `core` module
-- 
+
 ## [0.1.0] - 2022-12-10
 ### Added
 - `next-major` and `next-minor` scripts
