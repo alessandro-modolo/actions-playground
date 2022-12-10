@@ -1,6 +1,6 @@
 # Changelog       
 
-## 1.0 Unreleased
+## [1.0.0] - 2022-12-10
 ### Security
 - fix a huge security bug
 
@@ -76,3 +76,4 @@ _:seedling: Initial release._
 [0.0.10]: https://github.com/alessandro-modolo/releases/tag/v0.0.10
 [0.1.0]: https://github.com/alessandro-modolo/releases/tag/v0.1.0
 [0.1.1]: https://github.com/alessandro-modolo/releases/tag/v0.1.1
+[1.0.0]: https://github.com/alessandro-modolo/releases/tag/v1.0.0
