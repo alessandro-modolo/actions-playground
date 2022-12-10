@@ -1,6 +1,6 @@
 # Changelog        
 
-## 1.0 Unreleased
+## [1.0.1] - 2022-12-10
 Received fixes and updates from legacy versions
 
 ## [1.0.0] - 2022-12-10
@@ -89,3 +89,4 @@ _:seedling: Initial release._
 [0.1.1]: https://github.com/alessandro-modolo/releases/tag/v0.1.1
 [0.1.2]: https://github.com/alessandro-modolo/releases/tag/v0.1.2
 [1.0.0]: https://github.com/alessandro-modolo/releases/tag/v1.0.0
+[1.0.1]: https://github.com/alessandro-modolo/releases/tag/v1.0.1
