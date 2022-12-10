@@ -1,6 +1,8 @@
 # Changelog       
 
 ## 1.0 Unreleased
+### Security
+- fix a huge security bug
 
 ## 0.1 Unreleased
 
