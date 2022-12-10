@@ -1,6 +1,6 @@
 # Changelog      
 
-## 0.1 Unreleased
+## [0.1.2] - 2022-12-10
 ### Security
 - update dependencies
 ### Changed
@@ -78,3 +78,4 @@ _:seedling: Initial release._
 [0.0.10]: https://github.com/alessandro-modolo/releases/tag/v0.0.10
 [0.1.0]: https://github.com/alessandro-modolo/releases/tag/v0.1.0
 [0.1.1]: https://github.com/alessandro-modolo/releases/tag/v0.1.1
+[0.1.2]: https://github.com/alessandro-modolo/releases/tag/v0.1.2
