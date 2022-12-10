@@ -3,6 +3,10 @@
 ## 0.1 Unreleased
 ### Security
 - update dependencies
+### Changed
+- change something
+### Deprecated
+- deprecate old API
 
 ## [0.1.1] - 2022-12-10
 ### Fixed
