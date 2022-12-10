@@ -1,6 +1,8 @@
 # Changelog      
 
 ## 0.1 Unreleased
+### Security
+- update dependencies
 
 ## [0.1.1] - 2022-12-10
 ### Fixed
