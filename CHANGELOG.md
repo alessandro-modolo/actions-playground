@@ -1,12 +1,21 @@
 # Changelog        
 
 ## 1.0 Unreleased
+Received fixes and updates from legacy versions
 
 ## [1.0.0] - 2022-12-10
 ### Security
 - fix a huge security bug
 
 ## 0.1 Unreleased
+
+## [0.1.2] - 2022-12-10
+### Security
+- update dependencies
+### Changed
+- change something
+### Deprecated
+- deprecate old API
 
 ## [0.1.1] - 2022-12-10
 ### Fixed
@@ -78,4 +87,5 @@ _:seedling: Initial release._
 [0.0.10]: https://github.com/alessandro-modolo/releases/tag/v0.0.10
 [0.1.0]: https://github.com/alessandro-modolo/releases/tag/v0.1.0
 [0.1.1]: https://github.com/alessandro-modolo/releases/tag/v0.1.1
+[0.1.2]: https://github.com/alessandro-modolo/releases/tag/v0.1.2
 [1.0.0]: https://github.com/alessandro-modolo/releases/tag/v1.0.0
