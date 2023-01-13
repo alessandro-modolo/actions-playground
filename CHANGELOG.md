@@ -1,6 +1,6 @@
 # Changelog         
 
-## 1.0 Unreleased
+## [1.0.2] - 2023-01-13
 ### Security
 - new security fix
 ### Changed
@@ -96,3 +96,4 @@ _:seedling: Initial release._
 [0.1.2]: https://github.com/alessandro-modolo/releases/tag/v0.1.2
 [1.0.0]: https://github.com/alessandro-modolo/releases/tag/v1.0.0
 [1.0.1]: https://github.com/alessandro-modolo/releases/tag/v1.0.1
+[1.0.2]: https://github.com/alessandro-modolo/releases/tag/v1.0.2
