@@ -1,6 +1,10 @@
 # Changelog         
 
 ## 1.0 Unreleased
+### Security
+- new security fix
+### Changed
+- change something
 
 ## [1.0.1] - 2022-12-10
 Received fixes and updates from legacy versions
